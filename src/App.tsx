@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { Session } from '@supabase/supabase-js';
 import { LogOut, UserCircle } from 'lucide-react';
 import { supabase } from './lib/supabase';
