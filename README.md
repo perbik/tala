@@ -52,23 +52,6 @@ Open http://localhost:5173
 4. Save → the calendar shows a colored dot for that day
 5. Mood colors reflect your emotional state across the month
 
-## Model Architecture
-
-```
-Input (100 tokens)
-  → Embedding (15k vocab, 128-dim)
-  → SpatialDropout1D
-  → BiLSTM (128 units, return_sequences)
-  → BiLSTM (64 units, return_sequences)
-  → Attention Layer
-  → Dense (256) → Dropout
-  → Dense (128) → Dropout
-  → Dense (6, softmax) → Mood Prediction
-```
-
-## Fallback
-If the model isn't trained yet, the app uses a **rule-based lexicon classifier** with curated keyword patterns (also mapped from GoEmotions categories). No Gemini or external APIs used.
-
 ## Project Structure
 
 ```
