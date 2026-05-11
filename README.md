@@ -1,4 +1,4 @@
-# MoodJournal — Affective Computing Journal
+# TALA — Affective Computing Journal
 
 A full-stack AI-powered journaling app with real-time mood detection built on the **GoEmotions** dataset from Google Research.
 
