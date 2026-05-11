@@ -1,0 +1,7 @@
+{
+  "mood_labels": ["happy", "sad", "productive", "tired", "neutral", "angry"],
+  "status": "placeholder",
+  "note": "Run train_mood_model.py to generate the trained model. The app will use rule-based fallback until then.",
+  "max_sequence_length": 100,
+  "vocab_size": 0
+}
