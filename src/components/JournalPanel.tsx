@@ -225,6 +225,7 @@ export const JournalPanel: React.FC<JournalPanelProps> = ({
             {/* Rich Text Editor (includes its own toolbar) */}
             <div style={{ flex: 1, display: 'flex', flexDirection: 'column', minHeight: 0, overflow: 'hidden' }}>
                 <RichTextEditor
+                    key={selectedDate}
                     initialHtml={contentHtml}
                     placeholder="Start writing..."
                     onChange={handleEditorChange}

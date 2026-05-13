@@ -211,6 +211,10 @@ body {
     overflow: hidden;
 }
 
+.cal-day:nth-child(-n+7) {
+    border-top: 1px solid var(--navy);
+}
+
 .cal-day {
     position: relative;
     /* No min-height — grid-auto-rows:1fr controls height */

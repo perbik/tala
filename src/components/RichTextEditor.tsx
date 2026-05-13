@@ -111,6 +111,13 @@ export const RichTextEditor: React.FC<RichTextEditorProps> = ({
         }
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
+    // Update content when initialHtml changes, but only if editor is not focused
+    useEffect(() => {
+        if (initialized.current && editorRef.current && document.activeElement !== editorRef.current) {
+            editorRef.current.innerHTML = initialHtml || '';
+        }
+    }, [initialHtml]);
+
     const refreshFormats = useCallback(() => {
         setFormats({
             bold: document.queryCommandState('bold'),
