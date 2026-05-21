@@ -11,9 +11,9 @@
   "vocab_size": 15000,
   "embedding_dim": 128,
   "lstm_units": 128,
-  "val_accuracy": 0.38427484035491943,
-  "val_loss": 1.7827928066253662,
-  "epochs_trained": 5,
+  "val_accuracy": 0.5086613297462463,
+  "val_loss": 1.311474084854126,
+  "epochs_trained": 10,
   "training_samples": 187032,
   "emotion_to_mood_mapping": {
     "admiration": "happy",

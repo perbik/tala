@@ -55,9 +55,9 @@ function JournalApp({ userEmail, userId }: { userEmail: string; userId: string }
                     <button
                         onClick={() => setShowProfile(p => !p)}
                         title={showProfile ? 'Back to journal' : 'View profile'}
-                        style={{ marginLeft: 8, background: 'rgba(255,255,255,0.12)', border: '1.5px solid rgba(255,255,255,0.25)', color: '#fff', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5, padding: '4px 10px', fontSize: 11, fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: 'Helvetica,"Helvetica Neue",Arial,sans-serif', transition: 'background 0.15s' }}
+                        style={{ marginLeft: 0, background: showProfile ? 'rgba(255,255,255,0.28)' : 'rgba(255,255,255,0.12)', border: '1.5px solid rgba(255,255,255,0.25)', color: '#fff', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5, padding: '4px 10px', fontSize: 11, fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: 'Helvetica,"Helvetica Neue",Arial,sans-serif', transition: 'background 0.15s' }}
                         onMouseEnter={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.22)')}
-                        onMouseLeave={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.12)')}
+                        onMouseLeave={e => (e.currentTarget.style.background = showProfile ? 'rgba(255,255,255,0.28)' : 'rgba(255,255,255,0.12)')}
                     >
                         <UserCircle size={13} strokeWidth={2.5} />
                         {showProfile ? 'Journal' : 'Profile'}
